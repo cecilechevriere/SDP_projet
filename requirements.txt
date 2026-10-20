@@ -1,0 +1,7 @@
+# Python 3.10 à 3.13 (lincs n'a pas de wheel exploitable pour Python 3.9 sous Anaconda)
+gurobipy        # jalon 1 (licence Gurobi nécessaire pour les gros modèles)
+lincs==2.0.2    # jalon 2
+numpy
+pandas
+matplotlib
+ipykernel       # pour exécuter les notebooks
