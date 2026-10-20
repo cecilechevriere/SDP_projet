@@ -16,6 +16,19 @@ def classify(X, b, w, lam):
     return gagne.sum(axis=0).astype(int)
 
 
+_ENV = None
+
+
+def gurobi_env():
+    """Environnement Gurobi silencieux, créé une seule fois (n'affiche pas les informations de licence)."""
+    global _ENV
+    if _ENV is None:
+        _ENV = gp.Env(empty=True)
+        _ENV.setParam("OutputFlag", 0)
+        _ENV.start()
+    return _ENV
+
+
 def learn_mr_sort(X, y, p=None, eps=1e-3, eps_w=1e-3, vmax=20.0, time_limit=60, verbose=False, compact=False):
     """
     Apprend un modèle MR-Sort à p catégories (questions vii et viii), objectif : max alpha.
@@ -35,7 +48,7 @@ def learn_mr_sort(X, y, p=None, eps=1e-3, eps_w=1e-3, vmax=20.0, time_limit=60, 
         p = int(y.max()) + 1
     M = vmax + eps
 
-    mdl = gp.Model("MRSort")
+    mdl = gp.Model("MRSort", env=gurobi_env())
     mdl.Params.OutputFlag = 1 if verbose else 0
     mdl.Params.TimeLimit = time_limit
 
@@ -81,6 +94,8 @@ def learn_mr_sort(X, y, p=None, eps=1e-3, eps_w=1e-3, vmax=20.0, time_limit=60, 
 
     mdl.setObjective(alpha, GRB.MAXIMIZE)
     mdl.optimize()
+    if mdl.SolCount == 0:   # ex. limite de temps atteinte avant toute solution
+        raise RuntimeError(f"Gurobi n'a trouvé aucune solution (statut {mdl.Status}) : augmenter time_limit.")
 
     b_v = np.array([[b[h, i].X for i in range(n)] for h in range(p - 1)])
     w_v = np.array([w[i].X for i in range(n)])

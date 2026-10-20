@@ -160,7 +160,6 @@ def describe(model, criteria=None):
 
 if __name__ == "__main__":
     # Vérification : notre classify (numpy) reproduit exactement lincs.classify_alternatives
-    import sys
     d = "Datasets-Step2/type_a/cr06_ca03/"
     X, y, cats = load_dataset(d + "n0300_rep50-50_noise00.csv", d + "problem.yml")
     p = len(cats)

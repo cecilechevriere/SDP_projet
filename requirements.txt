@@ -5,3 +5,5 @@ numpy
 pandas
 matplotlib
 ipykernel       # pour exécuter les notebooks
+nbformat        # make_notebook.py (jalon 2)
+nbconvert       # exécution du notebook du jalon 2
