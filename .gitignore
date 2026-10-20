@@ -10,7 +10,7 @@ __pycache__/
 *.pyc
 *.json
 *.csv
-*.txt
+#*.txt
 *.yml
 
 # Variables d'environnement et secrets
