@@ -1,0 +1,26 @@
+# Environnement Python
+.venv/
+venv/
+env/
+
+# Fichiers Python temporaires
+__pycache__/
+*.py[cod]
+
+*.pyc
+*.json
+*.csv
+*.txt
+*.yml
+
+# Variables d'environnement et secrets
+.env
+.env.*
+!.env.example
+
+# Fichiers macOS
+.DS_Store
+
+# Configuration locale des éditeurs
+.vscode/
+.idea/
