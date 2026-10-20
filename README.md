@@ -4,7 +4,7 @@
 Apprentissage exact d'un MR-Sort (frontières `b`, poids `w`, seuil `λ`) par un MIP résolu avec Gurobi, en maximisant la marge de séparation.
 - `mrsort_gurobi.py` : modèle, classification et protocole de test.
 - `run_dataset0.py` : apprentissage sur Dataset0, 100 % des 60 objets restitués.
-- Résultats : qualité moyenne en test de 0,95 (p = 2), 0,91 (p = 3) et 0,88 (p = 4).
+- Résultats : qualité moyenne en test de 0,95 (p = 2), 0,92 (p = 3) et 0,88 (p = 4).
 
 ## Jalon 2 – Heuristiques : lincs et inv-2-MR-Sort ([jalon2_MRSort/](jalon2_MRSort/))
 1. **Un seul MR-Sort** appris avec l'heuristique de lincs (`mrsort_lincs.py`).
@@ -15,5 +15,5 @@ Apprentissage exact d'un MR-Sort (frontières `b`, poids `w`, seuil `λ`) par un
 ## Installation
 ```bash
 python3.11 -m venv .venv
-.venv/bin/pip install gurobipy lincs numpy pandas matplotlib
+.venv/bin/pip install -r requirements.txt
 ```

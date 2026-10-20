@@ -6,10 +6,10 @@ lincs 2.0.2 n'a pas de wheel reconnu par le pip d'Anaconda (Python 3.9), d'où u
 
 ```bash
 cd SDP_projet
-/usr/local/bin/python3.11 -m venv .venv
-.venv/bin/pip install lincs numpy pandas matplotlib ipykernel nbconvert nbformat
+python3.11 -m venv .venv          # Python 3.10 à 3.13
+.venv/bin/pip install -r requirements.txt
 cd jalon2_MRSort
-unzip ~/Downloads/Datasets-Step2.zip        # datasets supermarket
+unzip <chemin>/Datasets-Step2.zip   # datasets supermarket (non versionnés)
 ```
 
 ## Fichiers
@@ -116,6 +116,10 @@ Moyennes sur les tailles 300, 600 et 1200 :
   0,777. Le gain ne vient donc pas seulement du fait d'avoir « deux chances » de bien classer.
 - Limite de la mesure en test : le segment d'un nouvel objet n'est pas observé, donc on compte l'objet comme bien classé
   si l'un des deux modèles le classe bien (c'est aussi le cas pour le témoin).
+- Tailles des segments trouvés (`taille_seg_min`) : 0,38 en moyenne sur les fichiers 75-25 (de 0,21 à 0,49), loin
+  des 25 % attendus. Elles ne reflètent pas les vraies proportions : beaucoup d'objets sont bien classés par les deux
+  modèles (les deux vrais modèles sont d'accord sur une grande partie de l'espace), et ces objets sont répartis selon
+  la marge, sans lien avec leur vrai segment. Seuls les objets expliqués par un seul modèle renseignent sur le segment.
 - Temps : environ 3 min par fichier avec l'heuristique (5 redémarrages), contre ~5 s pour un seul modèle.
 
 ### Validation synthétique (segments connus ; 300 objets, 6 critères, 3 classes ; 5 instances par configuration)

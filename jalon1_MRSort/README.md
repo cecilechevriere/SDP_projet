@@ -27,14 +27,14 @@ Programme (MIP) :
 ## Résultats
 
 Protocole de test (n = 4, 40 objets d'apprentissage, 1000 objets de test, 20 essais, learning set sans bruit) : qualité moyenne
-0,95 (p = 2), 0,91 (p = 3), 0,88 (p = 4).
+0,95 (p = 2), 0,92 (p = 3), 0,88 (p = 4) (cf. sorties du notebook).
 
 ## Paramètres appris sur Dataset0 (60 objets, 5 critères, 3 catégories ; eps = 1, eps_w = 1e-3)
 
 | | crit1 | crit2 | crit3 | crit4 | crit5 |
 |---|---|---|---|---|---|
-| frontière b^1 (cat. 1 / 2) | 38 | 35 | 30 | 34 | 36 |
-| frontière b^2 (cat. 2 / 3) | 50 | 53 | 37 | 63 | 50 |
+| frontière b^1 (cat. 1 / 2) | 38 | 35 | 30 | 35 | 31 |
+| frontière b^2 (cat. 2 / 3) | 64 | 53 | 37 | 54 | 50 |
 | poids w | 0,1429 (1/7) | 0,2857 (2/7) | 0,1429 (1/7) | 0,1429 (1/7) | 0,2857 (2/7) |
 
 - seuil `lambda = 0,6434` (une coalition gagne si elle pèse au moins 5/7 ≈ 0,714, la coalition de poids 4/7 ≈ 0,571 perd) ;
