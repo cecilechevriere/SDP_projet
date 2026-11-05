@@ -13,6 +13,7 @@ __pycache__/
 #*.txt
 *.yml
 !jalon2_MRSort/results/*.csv
+!jalon3_MRSort/results/*.csv
 
 # Variables d'environnement et secrets
 .env

@@ -1,0 +1,34 @@
+{'attaque': 'aucune', 'instance': 0, 'accord_A_brouillage': 1.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.972, 'fid_confiance_seule': 0.642, 'temps_s': 4.771}
+{'attaque': 'aucune', 'instance': 1, 'accord_A_brouillage': 1.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.972, 'fid_confiance_seule': 0.638, 'temps_s': 7.446}
+{'attaque': 'aucune', 'instance': 2, 'accord_A_brouillage': 1.0, 'fid_plafond': 0.97, 'fid_un_modele': 0.972, 'fid_confiance_seule': 0.698, 'temps_s': 9.255}
+{'attaque': 'modele_aleatoire', 'instance': 0, 'accord_A_brouillage': 0.507, 'fid_plafond': 0.972, 'fid_un_modele': 0.671, 'fid_confiance_seule': 0.642, 'fid_deux_modeles': 0.895, 'fid_deux_modeles_meilleur': 0.895, 'purete_segment_A': 0.843, 'train_deux_modeles': 0.998, 'temps_s': 135.777}
+{'attaque': 'modele_aleatoire', 'instance': 1, 'accord_A_brouillage': 0.42, 'fid_plafond': 0.972, 'fid_un_modele': 0.63, 'fid_confiance_seule': 0.638, 'fid_deux_modeles': 0.916, 'fid_deux_modeles_meilleur': 0.916, 'purete_segment_A': 0.844, 'train_deux_modeles': 0.985, 'temps_s': 235.786}
+{'attaque': 'modele_aleatoire', 'instance': 2, 'accord_A_brouillage': 0.403, 'fid_plafond': 0.97, 'fid_un_modele': 0.548, 'fid_confiance_seule': 0.698, 'fid_deux_modeles': 0.852, 'fid_deux_modeles_meilleur': 0.852, 'purete_segment_A': 0.761, 'train_deux_modeles': 0.995, 'temps_s': 184.968}
+{'attaque': 'modele_aleatoire', 'instance': 3, 'accord_A_brouillage': 0.437, 'fid_plafond': 0.969, 'fid_un_modele': 0.675, 'fid_confiance_seule': 0.454, 'fid_deux_modeles': 0.954, 'fid_deux_modeles_meilleur': 0.954, 'purete_segment_A': 0.816, 'train_deux_modeles': 0.997, 'temps_s': 220.774}
+{'attaque': 'modele_aleatoire', 'instance': 4, 'accord_A_brouillage': 0.443, 'fid_plafond': 0.978, 'fid_un_modele': 0.629, 'fid_confiance_seule': 0.781, 'fid_deux_modeles': 0.928, 'fid_deux_modeles_meilleur': 0.928, 'purete_segment_A': 0.747, 'train_deux_modeles': 0.987, 'temps_s': 234.07}
+{'attaque': 'etiquettes_aleatoires', 'instance': 0, 'accord_A_brouillage': 0.343, 'fid_plafond': 0.972, 'fid_un_modele': 0.764, 'fid_confiance_seule': 0.642, 'fid_deux_modeles': 0.662, 'fid_deux_modeles_meilleur': 0.662, 'purete_segment_A': 0.608, 'train_deux_modeles': 0.845, 'temps_s': 199.405}
+{'attaque': 'etiquettes_aleatoires', 'instance': 1, 'accord_A_brouillage': 0.337, 'fid_plafond': 0.972, 'fid_un_modele': 0.903, 'fid_confiance_seule': 0.638, 'fid_deux_modeles': 0.488, 'fid_deux_modeles_meilleur': 0.53, 'purete_segment_A': 0.507, 'train_deux_modeles': 0.86, 'temps_s': 247.189}
+{'attaque': 'etiquettes_aleatoires', 'instance': 2, 'accord_A_brouillage': 0.26, 'fid_plafond': 0.97, 'fid_un_modele': 0.781, 'fid_confiance_seule': 0.698, 'fid_deux_modeles': 0.512, 'fid_deux_modeles_meilleur': 0.512, 'purete_segment_A': 0.563, 'train_deux_modeles': 0.82, 'temps_s': 243.944}
+{'attaque': 'frontiere_0.05', 'instance': 0, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.832, 'fid_confiance_seule': 0.642, 'fid_deux_modeles': 0.71, 'fid_deux_modeles_meilleur': 0.71, 'purete_segment_A': 0.404, 'train_deux_modeles': 0.992, 'temps_s': 219.695}
+{'attaque': 'frontiere_0.05', 'instance': 1, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.805, 'fid_confiance_seule': 0.638, 'fid_deux_modeles': 0.681, 'fid_deux_modeles_meilleur': 0.681, 'purete_segment_A': 0.442, 'train_deux_modeles': 0.995, 'temps_s': 140.37}
+{'attaque': 'frontiere_0.05', 'instance': 2, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.97, 'fid_un_modele': 0.781, 'fid_confiance_seule': 0.698, 'fid_deux_modeles': 0.732, 'fid_deux_modeles_meilleur': 0.732, 'purete_segment_A': 0.784, 'train_deux_modeles': 0.995, 'temps_s': 212.586}
+{'attaque': 'frontiere_0.10', 'instance': 0, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.644, 'fid_confiance_seule': 0.642, 'fid_deux_modeles': 0.624, 'fid_deux_modeles_meilleur': 0.624, 'purete_segment_A': 0.45, 'train_deux_modeles': 0.99, 'temps_s': 231.146}
+{'attaque': 'frontiere_0.10', 'instance': 1, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.72, 'fid_confiance_seule': 0.638, 'fid_deux_modeles': 0.683, 'fid_deux_modeles_meilleur': 0.683, 'purete_segment_A': 0.751, 'train_deux_modeles': 0.985, 'temps_s': 194.181}
+{'attaque': 'frontiere_0.10', 'instance': 2, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.979, 'fid_un_modele': 0.691, 'fid_confiance_seule': 0.698, 'fid_deux_modeles': 0.696, 'fid_deux_modeles_meilleur': 0.696, 'purete_segment_A': 0.869, 'train_deux_modeles': 0.99, 'temps_s': 217.936}
+{'attaque': 'frontiere_0.20', 'instance': 0, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.601, 'fid_confiance_seule': 0.642, 'fid_deux_modeles': 0.516, 'fid_deux_modeles_meilleur': 0.61, 'purete_segment_A': 0.833, 'train_deux_modeles': 0.983, 'temps_s': 191.884}
+{'attaque': 'frontiere_0.20', 'instance': 1, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.972, 'fid_un_modele': 0.588, 'fid_confiance_seule': 0.638, 'fid_deux_modeles': 0.782, 'fid_deux_modeles_meilleur': 0.782, 'purete_segment_A': 0.984, 'train_deux_modeles': 0.998, 'temps_s': 245.019}
+{'attaque': 'frontiere_0.20', 'instance': 2, 'accord_A_brouillage': 0.0, 'fid_plafond': 0.97, 'fid_un_modele': 0.543, 'fid_confiance_seule': 0.698, 'fid_deux_modeles': 0.893, 'fid_deux_modeles_meilleur': 0.893, 'purete_segment_A': 0.992, 'train_deux_modeles': 0.997, 'temps_s': 261.259}
+{'attaque': 'copies_contradictoires', 'instance': 0, 'accord_A_brouillage': 0.007, 'fid_plafond': 0.972, 'fid_un_modele': 0.499, 'fid_confiance_seule': 0.642, 'fid_deux_modeles': 0.561, 'fid_deux_modeles_meilleur': 0.561, 'purete_segment_A': 0.745, 'train_deux_modeles': 0.895, 'temps_s': 206.885}
+{'attaque': 'copies_contradictoires', 'instance': 1, 'accord_A_brouillage': 0.02, 'fid_plafond': 0.972, 'fid_un_modele': 0.528, 'fid_confiance_seule': 0.638, 'fid_deux_modeles': 0.466, 'fid_deux_modeles_meilleur': 0.493, 'purete_segment_A': 0.505, 'train_deux_modeles': 0.928, 'temps_s': 204.275}
+{'attaque': 'copies_contradictoires', 'instance': 2, 'accord_A_brouillage': 0.013, 'fid_plafond': 0.979, 'fid_un_modele': 0.582, 'fid_confiance_seule': 0.698, 'fid_deux_modeles': 0.582, 'fid_deux_modeles_meilleur': 0.582, 'purete_segment_A': 0.459, 'train_deux_modeles': 0.863, 'temps_s': 259.33}
+                        accord_A_brouillage  ...  train_deux_modeles
+attaque                                      ...                    
+aucune                                1.000  ...                 NaN
+modele_aleatoire                      0.442  ...               0.992
+etiquettes_aleatoires                 0.313  ...               0.842
+frontiere_0.05                        0.000  ...               0.994
+frontiere_0.10                        0.000  ...               0.988
+frontiere_0.20                        0.000  ...               0.993
+copies_contradictoires                0.013  ...               0.896
+
+[7 rows x 9 columns]
