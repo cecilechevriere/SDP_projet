@@ -12,6 +12,14 @@ Apprentissage exact d'un MR-Sort (frontières `b`, poids `w`, seuil `λ`) par un
 - Résultats sur le supermarket (6 critères, 3 classes, 24 fichiers) : 0,67 de bien classés en test avec un seul modèle, contre **0,92** avec l'heuristique à deux segments.
 - Détails dans [jalon2_MRSort/README.md](jalon2_MRSort/README.md) et le notebook `jalon2.ipynb`.
 
+## Jalon 3 – Apprentissage face à un agent malicieux ([jalon3_MRSort/](jalon3_MRSort/))
+B reçoit les données de A mélangées à autant de fausses données. Il apprend un MR-Sort, ou deux avec l'heuristique du
+jalon 2, et retrouve celui de A grâce à 20 objets de confiance.
+- Agent basique (MR-Sort aléatoire) : fidélité à `M_A` de 0,63 avec un seul modèle, contre **0,91** avec deux modèles.
+- Meilleure attaque trouvée : **copies contradictoires** (chaque vraie donnée recopiée avec une classe voisine). Le modèle
+  de B tombe à 0,54, moins bien qu'avec ses seuls objets de confiance. Détails dans
+  [jalon3_MRSort/README.md](jalon3_MRSort/README.md) et le notebook `jalon3.ipynb`.
+
 ## Installation
 ```bash
 python3.11 -m venv .venv
